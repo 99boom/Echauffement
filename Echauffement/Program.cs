@@ -11,9 +11,13 @@ class Program
         // Etape 1 : présentez-vous en écrivant votre prénom et votre jeu préféré
         Console.WriteLine("Hi,my name is Ivan and my favorite game is Uncharted.");
         // Etape 2 : demandez à l'utilisateur son prénom et son âge
+        Console.Write("What's your firstname ? ");
+        string prenom = Console.ReadLine();
 
+        Console.Write("How old are you ? ");
+        int age = Convert.ToInt32(Console.ReadLine()); 
         // Etape 3 : affichez soit "Tu es majeur", soit "Tu es mineur" dépendant de l'âge fourni par l'utilisateur
-
+        
         // Etape 4 : demandez maintenant à l'utilisateur combien d'euro il a (nombre décimal)
 
         // Etape 5 : affichez maintenant 4 choix d'armes avec chacune un prix
