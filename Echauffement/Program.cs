@@ -19,12 +19,14 @@ class Program
         // Etape 3 : affichez soit "Tu es majeur", soit "Tu es mineur" dépendant de l'âge fourni par l'utilisateur
         if (age >= 18)
         {
-            Console.WriteLine("Tu es majeur.");
+            Console.WriteLine("You are major.");
         }
         else
         {
-            Console.WriteLine("Tu es mineur.");
-        // Etape 4 : demandez maintenant à l'utilisateur combien d'euro il a (nombre décimal)
+            Console.WriteLine("You are minor.");
+            // Etape 4 : demandez maintenant à l'utilisateur combien d'euro il a (nombre décimal)
+            Console.WriteLine("How much euros do you have? ");
+            double money = Convert.ToDouble (Console.ReadLine());)
 
         // Etape 5 : affichez maintenant 4 choix d'armes avec chacune un prix
 
