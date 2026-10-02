@@ -66,13 +66,17 @@ class Program
             {
                 Console.WriteLine("You cannot buy it : you don't have enough money.");
             }
-           
-        // Etape 7b : modifiez l'étape 7a pour ajouter un connecteur logique qui vérifie que l'utilisateur est majeur en plus d'avoir assez d'argent
-        // Lorsque l'utilisateur respecte ces demandes, retirez le prix de l'arme de l'argent de l'utilisateur, puis confirmez à l'utilisateur que l'action a été effectuée 
-        // Dans tous les autres cas, informez l'utilisateur que l'action n'a pas été possible
+            else
+            {
+                Console.WriteLine("invalid choice");
+            }
 
-                /*
-                 * Après votre dernier commit, faites un push de votre projet pour qu'il soit accessible sur github.com
-                 */
+            // Etape 7b : modifiez l'étape 7a pour ajouter un connecteur logique qui vérifie que l'utilisateur est majeur en plus d'avoir assez d'argent
+            // Lorsque l'utilisateur respecte ces demandes, retirez le prix de l'arme de l'argent de l'utilisateur, puis confirmez à l'utilisateur que l'action a été effectuée 
+            // Dans tous les autres cas, informez l'utilisateur que l'action n'a pas été possible
+
+            /*
+             * Après votre dernier commit, faites un push de votre projet pour qu'il soit accessible sur github.com
+             */
+        }
     }
-}
