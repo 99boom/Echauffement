@@ -42,8 +42,34 @@ class Program
         Console.WriteLine("4. P1911 - 1600 $");
 
         // Etape 6 : laissez l'utilisateur choisir l'une de ces 4 armes en indiquant un nombre entre 1 et 4
+        Console.Write("Choose one of those firearms (1 - 4): ");
+        int chose = Convert.ToInt32(Console.ReadLine());
 
         // Détermination du prix selon le choix
+        double price = 0;
+        bool choixValide = true;
+
+        if (chose == 1)
+        {
+            price = 500;
+        }
+        else if (chose == 2)
+        {
+            price = 1000;
+        }
+        else if (chose == 3)
+        {
+            price = 2000;
+        }
+        else if (chose == 4)
+        {
+            price = 1600;
+        }
+        else
+        {
+            choixValide = false;
+        }
+
 
         // Etape 7a & 7b : vérification de l'argent ET de la majorité (connecteur logique &&)
         // Correction de "pic" en "price"
