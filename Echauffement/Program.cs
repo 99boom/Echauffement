@@ -70,12 +70,22 @@ class Program
             choixValide = false;
         }
 
-
         // Etape 7a & 7b : vérification de l'argent ET de la majorité (connecteur logique &&)
-        // Correction de "pic" en "price"
-
-
-        // Gère le cas où l'utilisateur est mineur OU s'il n'a pas assez d'argent
+        if (!choixValide)
+        {
+            Console.WriteLine("Action impossible : Invalid choice.");
+        }
+        else if (estMajeur && money >= price)
+        {
+            money = money - price; // Correction de "pic" en "price"
+            Console.WriteLine("You just bought a firearm!");
+            Console.WriteLine("Your new balance is " + money + " $.");
+        }
+        else
+        {
+            // Gère le cas où l'utilisateur est mineur OU s'il n'a pas assez d'argent
+            Console.WriteLine("Action impossible : You are either too young or you don't have enough money.");
+        }
 
         /*
          * Après votre dernier commit, faites un push de votre projet pour qu'il soit accessible sur github.com
