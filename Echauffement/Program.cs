@@ -19,6 +19,16 @@ class Program
         int age = Convert.ToInt32(Console.ReadLine());
 
         // Etape 3 : affichez soit "Tu es majeur", soit "Tu es mineur" dépendant de l'âge fourni par l'utilisateur
+        bool estMajeur = false;
+        if (age >= 18)
+        {
+            Console.WriteLine("You are major.");
+            estMajeur = true;
+        }
+        else
+        {
+            Console.WriteLine("You are minor.");
+        }
 
         // Etape 4 : demandez maintenant à l'utilisateur combien d'euro il a (nombre décimal)
 
