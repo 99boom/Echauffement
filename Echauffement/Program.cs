@@ -9,74 +9,29 @@ class Program
          */
 
         // Etape 1 : présentez-vous en écrivant votre prénom et votre jeu préféré
-        Console.WriteLine("Hi,my name is Ivan and my favorite game is Uncharted.");
-        // Etape 2 : demandez à l'utilisateur son prénom et son âge
-        Console.Write("What's your firstname ? ");
-        string prenom = Console.ReadLine();
+        Console.WriteLine("Hi, my name is Ivan and my favorite game is Uncharted.");
 
-        Console.Write("How old are you ? ");
-        int age = Convert.ToInt32(Console.ReadLine());
+        // Etape 2 : demandez à l'utilisateur son prénom et son âge
+
         // Etape 3 : affichez soit "Tu es majeur", soit "Tu es mineur" dépendant de l'âge fourni par l'utilisateur
-        if (age >= 18)
-        {
-            Console.WriteLine("You are major.");
-        }
-        else
-        {
-            Console.WriteLine("You are minor.");
-            // Etape 4 : demandez maintenant à l'utilisateur combien d'euro il a (nombre décimal)
-            Console.WriteLine("How much euros do you have? ");
-            double money = Convert.ToDouble(Console.ReadLine());)
+
+        // Etape 4 : demandez maintenant à l'utilisateur combien d'euro il a (nombre décimal)
+   
 
         // Etape 5 : affichez maintenant 4 choix d'armes avec chacune un prix
-        Console.WriteLine("1. Cattleman - 500 $");
-            Consone.WriteLine("2. Lemat - 1000 $");
-            Console.WriteLine("3. Lancaster - 2000 $");
-            Console.WriteLine("4. P1911 - 1600 $");
-            // Etape 6 : laissez l'utilisateur choisir l'une de ces 4 armes en indiquant un nombre entre 1 et 4
-            Console.WriteLine("Chose one of those fire arms (1 - 4) : ");
-            int chose = Convert.ToInt32(Console.ReadLine());
-            // Etape 7a : vérifiez si l'utilisateur a assez d'argent par rapport à la somme qu'il avait rentré à l'étape 4
-            double price = 0;
+       
+        // Etape 6 : laissez l'utilisateur choisir l'une de ces 4 armes en indiquant un nombre entre 1 et 4
 
-            if (chose == 1)
-            {
-                price = 500;
-            }
-            else if (chose == 2)
-            {
-                price = 1000;
-            }
-            else if (chose == 3)
-            {
-                price = 2000;
-            }
-            else if (chose == 4)
-            {
-                price = 1600;
-            }
+        // Détermination du prix selon le choix
+  
+        // Etape 7a & 7b : vérification de l'argent ET de la majorité (connecteur logique &&)
+       // Correction de "pic" en "price"
 
-            if (money >= price)
-            {
-                money = money - prix;
-                Console.WriteLine("You just bought a fire arm !");
-                Console.WriteLine("Your new balance is " + money + " $.");
-            }
-            else
-            {
-                Console.WriteLine("You cannot buy it : you don't have enough money.");
-            }
-            else
-            {
-                Console.WriteLine("invalid choice");
-            }
-
-            // Etape 7b : modifiez l'étape 7a pour ajouter un connecteur logique qui vérifie que l'utilisateur est majeur en plus d'avoir assez d'argent
-            // Lorsque l'utilisateur respecte ces demandes, retirez le prix de l'arme de l'argent de l'utilisateur, puis confirmez à l'utilisateur que l'action a été effectuée 
-            // Dans tous les autres cas, informez l'utilisateur que l'action n'a pas été possible
-
-            /*
-             * Après votre dernier commit, faites un push de votre projet pour qu'il soit accessible sur github.com
-             */
-        }
+       
+            // Gère le cas où l'utilisateur est mineur OU s'il n'a pas assez d'argent
+  
+        /*
+         * Après votre dernier commit, faites un push de votre projet pour qu'il soit accessible sur github.com
+         */
     }
+}
