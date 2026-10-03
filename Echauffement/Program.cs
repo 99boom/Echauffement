@@ -35,6 +35,11 @@ class Program
         double money = Convert.ToDouble(Console.ReadLine());
 
         // Etape 5 : affichez maintenant 4 choix d'armes avec chacune un prix
+        Console.WriteLine("\n--- Available Weapons ---");
+        Console.WriteLine("1. Cattleman - 500 $");
+        Console.WriteLine("2. Lemat - 1000 $");
+        Console.WriteLine("3. Lancaster - 2000 $");
+        Console.WriteLine("4. P1911 - 1600 $");
 
         // Etape 6 : laissez l'utilisateur choisir l'une de ces 4 armes en indiquant un nombre entre 1 et 4
 
